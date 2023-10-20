@@ -2,7 +2,7 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 23.9.19
+Version: 23.10.20
 Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
@@ -34,6 +34,10 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Fri Oct 20 2023 Andris Pavēnis <andris.pavenis@fmi.fi> 23.10.20-1.fmi
+- Compress part of largest test input and output files
+- Update test results: support of eccodes-2.33.0, new results for csv2qd and bufrtoqd
+
 * Tue Sep 19 2023 Andris Pavenis <andris.pavenis@fmi.fi> 23.9.19-1.fmi
 - Update test results for eccodes-2.31 and add support of earlier versions
 
