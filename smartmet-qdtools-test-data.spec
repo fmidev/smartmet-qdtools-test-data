@@ -18,6 +18,8 @@ Provides: RPMNAME
 %description
 Test data for smartmet-qdtools. Data is not needed for production.
 
+GIT repo - https://github.com/fmidev/smartmet-qdtools-test-data
+
 %prep
 %setup -q -n %{RPMNAME}
 
