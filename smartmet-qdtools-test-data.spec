@@ -2,7 +2,7 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 24.10.1
+Version: 24.11.28
 Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
@@ -36,6 +36,9 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Thu Nov 28 2024 Andris Pavēnis <andris.pavenis@fmi.fi> 24.11.28-1.fmi
+- Update for eccodes-2.38.X
+
 * Tue Oct  1 2024 Andris Pavēnis <andris.pavenis@fmi.fi> 24.10.1-1.fmi
 - Support eccodes-3.37.0 and optimize differences between versions
 
