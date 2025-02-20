@@ -3,7 +3,7 @@
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
 Version: 25.2.20
-Release: 1%{?dist}.fmi
+Release: 2%{?dist}.fmi
 License: MIT
 Group: Development/Tools
 URL: https://github.com/fmidev/smartmet-qdtools-test-data
@@ -36,6 +36,9 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Thu Feb 20 2025 Andris Pavēnis <andris.pavenis@fmi.fi> 25.2.20-2.fmi
+- Add 2 more expected result files for eccodes-2.39
+
 * Thu Feb 20 2025 Andris Pavēnis <andris.pavenis@fmi.fi> 25.2.20-1.fmi
 - Update gribtoqd test results for eccodes 2.39
 
