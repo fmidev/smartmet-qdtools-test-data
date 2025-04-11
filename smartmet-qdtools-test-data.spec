@@ -2,8 +2,8 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 25.2.20
-Release: 2%{?dist}.fmi
+Version: 25.4.11
+Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
 URL: https://github.com/fmidev/smartmet-qdtools-test-data
@@ -36,6 +36,9 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Fri Apr 11 2025 Andris Pavēnis <andris.pavenis@fmi.fi> 25.4.11-1.fmi
+- Add new nctoqd test file with expected result (sla.nc)
+
 * Thu Feb 20 2025 Andris Pavēnis <andris.pavenis@fmi.fi> 25.2.20-2.fmi
 - Add 2 more expected result files for eccodes-2.39
 
