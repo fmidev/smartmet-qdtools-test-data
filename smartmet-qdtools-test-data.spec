@@ -2,7 +2,7 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 25.4.11
+Version: 25.5.8
 Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
@@ -36,6 +36,9 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Thu May  8 2025 Andris Pavēnis <andris.pavenis@fmi.fi> 25.5.8-1.fmi
+- Remove separate expected results for newbase WGS84 branch
+
 * Fri Apr 11 2025 Andris Pavēnis <andris.pavenis@fmi.fi> 25.4.11-1.fmi
 - Add new nctoqd test file with expected result (sla.nc)
 
