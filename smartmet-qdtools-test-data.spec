@@ -3,7 +3,7 @@
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
 Version: 26.7.3
-Release: 1%{?dist}.fmi
+Release: 2%{?dist}.fmi
 License: MIT
 Group: Development/Tools
 URL: https://github.com/fmidev/smartmet-qdtools-test-data
@@ -36,6 +36,10 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Fri Jul 03 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.7.3-2.fmi
+- Updated bufrtoqd results: eccodes decodes all subsets, so multi-subset
+  bulletins (land, buoy) now contain every station/observation
+
 * Fri Jul  3 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.7.3-1.fmi
 - Updated bufrtoqd results after bug fixes
 
