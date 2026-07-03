@@ -2,7 +2,7 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 25.4.11
+Version: 26.7.3
 Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
@@ -36,6 +36,9 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Fri Jul  3 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.7.3-1.fmi
+- Updated bufrtoqd results after bug fixes
+
 * Fri Apr 11 2025 Andris Pavēnis <andris.pavenis@fmi.fi> 25.4.11-1.fmi
 - Add new nctoqd test file with expected result (sla.nc)
 
