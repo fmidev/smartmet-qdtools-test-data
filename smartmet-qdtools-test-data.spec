@@ -2,8 +2,8 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 26.7.3
-Release: 2%{?dist}.fmi
+Version: 26.7.9
+Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
 URL: https://github.com/fmidev/smartmet-qdtools-test-data
@@ -36,6 +36,12 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Thu Jul 09 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.7.9-1.fmi
+- Regenerated stale qdfilter pointdata expected results from the current
+  24h pointdata.sqd input (old results came from an obsolete 72h input)
+- Regenerated radartoqd expected results after the WGS84 migration, which
+  centers the azimuthal-equidistant projection on the radar instead of (0,0)
+
 * Fri Jul 03 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.7.3-2.fmi
 - Updated bufrtoqd results: eccodes decodes all subsets, so multi-subset
   bulletins (land, buoy) now contain every station/observation
