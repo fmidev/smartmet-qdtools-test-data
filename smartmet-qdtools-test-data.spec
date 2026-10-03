@@ -2,7 +2,7 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 26.7.9
+Version: 26.10.3
 Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
@@ -36,6 +36,12 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Sat Oct  3 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.10.3-1.fmi
+- Regenerated stale qdstat, qdinfo and qdpoint expected results. The text comparison in the
+  tests compared the expected result with itself, hence the changes in qdstat (mode and median),
+  qdinfo (parameters sorted by id) and qdpoint (station time zones) went unnoticed
+- Added expected results for the new qdgridcalc and qdversionchange tests
+
 * Thu Jul 09 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.7.9-1.fmi
 - Regenerated stale qdfilter pointdata expected results from the current
   24h pointdata.sqd input (old results came from an obsolete 72h input)

@@ -1,0 +1,5 @@
+Given querydata projection: +proj=stere +lat_0=90 +lat_ts=60 +lon_0=20 +R=6371220 +units=m +wktext +no_defs +type=crs
+Grid size is: 63 x 70
+Grid size is at center of bottom edge: 31.225 x 31.1489 km
+Grid size is at center:           32.872 x 32.7852 km
+Grid size is at center of top edge: 34.0569 x 33.9318 km
