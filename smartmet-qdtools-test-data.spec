@@ -2,7 +2,7 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 26.10.3
+Version: 26.10.9
 Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
@@ -36,6 +36,9 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Fri Oct 09 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.10.9-1.fmi
+- Regenerate the ashtoqd results for the corrected newbase index masks of large polygons (BRAINSTORM-3026)
+
 * Sat Oct  3 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.10.3-1.fmi
 - Regenerated stale qdstat, qdinfo and qdpoint expected results. The text comparison in the
   tests compared the expected result with itself, hence the changes in qdstat (mode and median),
