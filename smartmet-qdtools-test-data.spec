@@ -2,7 +2,7 @@
 %define RPMNAME smartmet-%{BINNAME}
 Summary: Test data for smartmet-qdtools
 Name: %{RPMNAME}
-Version: 26.10.9
+Version: 26.11.3
 Release: 1%{?dist}.fmi
 License: MIT
 Group: Development/Tools
@@ -36,6 +36,9 @@ make %{_smp_mflags}
 %{_datadir}/smartmet/test/data/qdtools/*
 
 %changelog
+* Tue Nov 03 2026 Pertti Kinnia <pertti.kinnia@fmi.fi> - 26.11.3-1.fmi
+- Updated bufrtoqd_land result since later missing values no longer overwrite valid values
+
 * Fri Oct 09 2026 Mika Heiskanen <mika.heiskanen@fmi.fi> - 26.10.9-1.fmi
 - Regenerate the ashtoqd results for the corrected newbase index masks of large polygons (BRAINSTORM-3026)
 
